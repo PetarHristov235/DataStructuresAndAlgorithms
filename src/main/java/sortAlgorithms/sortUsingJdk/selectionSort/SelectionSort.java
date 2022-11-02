@@ -1,4 +1,4 @@
-package selectionSort;
+package sortAlgorithms.sortUsingJdk.selectionSort;
 
 public class SelectionSort {
 

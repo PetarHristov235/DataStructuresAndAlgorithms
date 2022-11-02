@@ -1,4 +1,4 @@
-package shellSort;
+package sortAlgorithms.sortUsingJdk.shellSort;
 
 public class ShellSort {
 

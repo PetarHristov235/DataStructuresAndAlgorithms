@@ -1,4 +1,4 @@
-package recursion;
+package sortAlgorithms.sortUsingJdk.recursion;
 
 public class Recursion {
 

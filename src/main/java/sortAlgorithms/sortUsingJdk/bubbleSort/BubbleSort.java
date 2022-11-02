@@ -1,4 +1,4 @@
-package org.example.bubbleSort;
+package sortAlgorithms.sortUsingJdk.bubbleSort;
 
 public class BubbleSort {
 

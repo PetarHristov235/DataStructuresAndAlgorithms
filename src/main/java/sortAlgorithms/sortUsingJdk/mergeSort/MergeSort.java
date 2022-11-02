@@ -1,4 +1,4 @@
-package mergeSort;
+package sortAlgorithms.sortUsingJdk.mergeSort;
 
 public class MergeSort {
 
@@ -25,6 +25,7 @@ public class MergeSort {
     }
 
     public static void merge(int[] input, final int start, int mid, int end) {
+        /** In order, you would like to sort the array in DESCENDING ORDER, you have to change <= with => */
         if (input[mid - 1] <= input[mid]) {
             return;
         }
@@ -35,6 +36,9 @@ public class MergeSort {
 
         int[] temp = new int[end - start];
         while (i < mid && j < end) {
+        /**
+            In order, you would like to sort the array in DESCENDING order, you have to change <= with >=
+        */
             temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
 

@@ -1,5 +1,5 @@
 
-package quickSort;
+package sortAlgorithms.sortUsingJdk.quickSort;
 
 public class QuickSort {
 
