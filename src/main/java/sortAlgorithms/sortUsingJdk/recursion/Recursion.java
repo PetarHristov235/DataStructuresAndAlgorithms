@@ -2,19 +2,19 @@ package sortAlgorithms.sortUsingJdk.recursion;
 
 public class Recursion {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println(interativeFactorail(3));
         System.out.println(recursiveFactorial(3));
     }
 
-    public static int recursiveFactorial(int num){
-        if(num==0){
+    public static int recursiveFactorial(final int num){
+        if(0 == num){
             return 1;
         }
         return num*recursiveFactorial(num-1);
     }
-    public static int interativeFactorail(int num){
-        if (num==0){
+    public static int interativeFactorail(final int num){
+        if (0 == num){
             return 1;
         }
         int factorial=1;

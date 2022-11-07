@@ -13,7 +13,7 @@ public class SelectionSort {
             }
             swap(intArray,largest,lastUnsortedIndex);
 }
-        for (int j : intArray) {
+        for (final int j : intArray) {
             System.out.println(j);
         }
     }

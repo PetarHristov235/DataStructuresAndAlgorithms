@@ -8,8 +8,8 @@ public class MergeSort {
         mergeSort(intArray,0, intArray.length);
 
 
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.println(intArray[i]);
+        for (final int j : intArray) {
+            System.out.println(j);
         }
     }
 
@@ -24,7 +24,7 @@ public class MergeSort {
         merge(input, start, mid, end);
     }
 
-    public static void merge(int[] input, final int start, int mid, int end) {
+    public static void merge(final int[] input, final int start, final int mid, final int end) {
         /** In order, you would like to sort the array in DESCENDING ORDER, you have to change <= with => */
         if (input[mid - 1] <= input[mid]) {
             return;
@@ -34,7 +34,7 @@ public class MergeSort {
         int j = mid;
         int tempIndex = 0;
 
-        int[] temp = new int[end - start];
+        final int[] temp = new int[end - start];
         while (i < mid && j < end) {
         /**
             In order, you would like to sort the array in DESCENDING order, you have to change <= with >=

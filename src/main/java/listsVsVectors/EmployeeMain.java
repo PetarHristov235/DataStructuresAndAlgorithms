@@ -2,12 +2,12 @@ package listsVsVectors;
 
 public class EmployeeMain {
 
-    public static void main(String[] args) {
-        Employee petarHristov= new Employee("Petar","Hristov",123);
-        Employee johnAtanasov= new Employee("John","Atanasov",1);
-        Employee ivanIvanov = new Employee("Ivan","Ivanov",1234);
-        Employee sotirMarinov= new Employee("Sotir","Marinov",12345);
-        EmployeeLinkedList list= new EmployeeLinkedList();
+    public static void main(final String[] args) {
+        final Employee petarHristov= new Employee("Petar","Hristov",123);
+        final Employee johnAtanasov= new Employee("John","Atanasov",1);
+        final Employee ivanIvanov = new Employee("Ivan","Ivanov",1234);
+        final Employee sotirMarinov= new Employee("Sotir","Marinov",12345);
+        final EmployeeLinkedList list= new EmployeeLinkedList();
         System.out.println(list.isEmpty());
         list.addToFront(petarHristov);
         list.addToFront(johnAtanasov);

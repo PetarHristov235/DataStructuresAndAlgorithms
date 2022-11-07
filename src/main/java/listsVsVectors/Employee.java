@@ -1,16 +1,15 @@
 package listsVsVectors;
 
-import java.util.Objects;
-
 public class Employee {
+
     private String firstName;
     private String lastName;
     private int id;
 
-    public Employee(String firstName,String lastName,int id){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.id=id;
+    public Employee(final String firstName, final String lastName, final int id) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -39,9 +38,9 @@ public class Employee {
 
     @Override
     public int hashCode() {
-        int result= firstName.hashCode();
-        result=31*result+lastName.hashCode();
-        result=31*result+id;
+        int result = firstName.hashCode();
+        result = 31 * result + lastName.hashCode();
+        result = 31 * result + id;
         return result;
     }
 
