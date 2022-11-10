@@ -3,8 +3,8 @@ package trees;
 public class Tree {
     private TreeNode root;
 
-    public void insert(int value){
-        if(root==null){
+    public void insert(final int value){
+        if(null == root){
             root=new TreeNode(value);
         }
         else {
@@ -13,7 +13,7 @@ public class Tree {
     }
 
 public void traverseInOrder(){
-        if(root!=null){
+        if(null != root){
             root.traverseInOrder();
         }
 }

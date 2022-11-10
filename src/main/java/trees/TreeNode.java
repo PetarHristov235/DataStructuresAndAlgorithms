@@ -6,12 +6,12 @@ public class TreeNode {
     private TreeNode rightChild;
 
 
-    public void insert(int value){
+    public void insert(final int value){
         if(value==data){
             return;
         }
         if(value<data){
-            if(leftChild==null){
+            if(null == leftChild){
                 leftChild= new TreeNode(value);
             }
             else {
@@ -19,7 +19,7 @@ public class TreeNode {
             }
         }
         else{
-            if(rightChild==null){
+            if(null == rightChild){
                 rightChild=new TreeNode(value);
             }else {
                 rightChild.insert(value);
@@ -27,11 +27,11 @@ public class TreeNode {
         }
     }
     public void traverseInOrder(){
-        if(leftChild!=null){
+        if(null != leftChild){
             leftChild.traverseInOrder();
         }
         System.out.println("Data="+data+", ");
-        if(rightChild!=null){
+        if(null != rightChild){
             rightChild.traverseInOrder();
         }
     }
