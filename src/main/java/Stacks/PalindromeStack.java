@@ -1,8 +1,6 @@
 package Stacks;
 
-import javax.sound.midi.Soundbank;
 import java.util.LinkedList;
-import java.util.List;
 
 public class PalindromeStack {
 
@@ -20,20 +18,20 @@ public class PalindromeStack {
     }
 
     private static boolean checkForPalindrome(final String text) {
-        final LinkedList<Character>stack=new LinkedList<>();
-        final StringBuilder stringNoPunctuation=new StringBuilder(text.length());
-        final String lowercase=text.toLowerCase();
+        final LinkedList<Character> stack = new LinkedList<>();
+        final StringBuilder stringNoPunctuation = new StringBuilder(text.length());
+        final String lowercase = text.toLowerCase();
 
-        for (int i = 0; i <lowercase.length() ; i++) {
-            final char c=lowercase.charAt(i);
-            if('a' <= c && 'z' >= c){
+        for (int i = 0; i < lowercase.length(); i++) {
+            final char c = lowercase.charAt(i);
+            if ('a' <= c && 'z' >= c) {
                 stringNoPunctuation.append(c);
                 stack.push(c);
             }
         }
 
-        final StringBuilder reversedString=new StringBuilder(stack.size());
-        while (!stack.isEmpty()){
+        final StringBuilder reversedString = new StringBuilder(stack.size());
+        while (!stack.isEmpty()) {
             reversedString.append(stack.pop());
         }
 

@@ -4,12 +4,12 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class LinkedStack {
-    private LinkedList<Employee>stack;
+    private final LinkedList<Employee>stack;
     public LinkedStack(){
         stack=new LinkedList<Employee>();
     }
 
-    public void  push(Employee employee){
+    public void  push(final Employee employee){
         stack.push(employee);
     }
     public Employee pop(){
@@ -23,7 +23,7 @@ public class LinkedStack {
     }
 
     public  void printStack(){
-        ListIterator<Employee>iterator=stack.listIterator();
+        final ListIterator<Employee>iterator=stack.listIterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }

@@ -2,7 +2,6 @@ package sortAlgorithms.sortUsingJdk.bucketSort;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 public class BucketSort {
@@ -26,7 +25,7 @@ public class BucketSort {
         for (int i = 0; i < input.length ; i++) {
         buckets[hash(input[i])].add(input[i]);
         }
-        for (final List bucket:buckets){
+        for (final List<Integer> bucket:buckets){
             Collections.sort(bucket);
         }
         
